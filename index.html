@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do Dapp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+  
+    <link rel="stylesheet" href="index.css" />
+    <script src="./ethers.js" type="module" defer >
+        </script>
+    <script src="./app.js" type="module" defer>
+    </script>
+</head>
+<body>
+
+<div class="py-2">
+    <h1 class="text-3xl text-center ">List of Todos</h1>
+
+<section class="mx-auto p-3 max-w-4xl"> 
+    <form id="formList">
+        <div class="flex space-x-6">
+            <input id="tdTitle" class="border p-3 w-full" placeholder="Todo Title">
+            <input id="tdDescription" class="border p-3 w-full" placeholder="Todo Description">
+            <button class="border border-blue-800 rounded py-4 px-16 p-y-2 mx-auto  text-center my-3 block" id="createTodoBtn">Add</button>
+        </div>
+    </form>
+</section>
+
+<section class="mx-auto p-3 max-w-4xl">
+    <h4 class="text-2xl">Add a new task and stay productive</h4>
+    <ul class="list-disc my-2" id="todos">
+
+    </ul>
+</section>
+</div>
+
+    
+</body>
+</html>
